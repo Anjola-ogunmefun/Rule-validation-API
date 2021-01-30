@@ -119,7 +119,7 @@ class MainController {
         } else {
             // if it is not part of the conditions values, if not gte, nt..
         }
-       
+       data_response.validation.field_value = dataFieldValue;
         if(verified){
             return Response.success(res, {
                 message: `field ${fieldValue} successfully validated.`,
